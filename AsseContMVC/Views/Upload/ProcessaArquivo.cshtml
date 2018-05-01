@@ -23,24 +23,25 @@
         <th></th>
     </tr>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Nsr)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TipoRegistro)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.DataMarcacao)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.HoraMarcacao)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Pis)
-        </td>
-    </tr>
-}
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nsr)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TipoRegistro)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DataMarcacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.HoraMarcacao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Pis)
+            </td>
+        </tr>
+    }
 
 </table>
