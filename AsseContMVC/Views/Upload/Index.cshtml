@@ -1,0 +1,26 @@
+﻿@model AsseContMVC.Models.Upload
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Upload AFD</h2>                                       
+@using (Html.BeginForm(null, null, FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="well">
+        <table class="table table-striped">
+            <tr>
+                <td>Arquivo: </td>
+                <td><input type="file" id="Arquivo" name="Arquivo" multiple/></td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td><input type="submit" name="submit" value="Enviar Arquivo" /></td>
+            </tr>
+            <tr>
+                <td>@ViewBag.Messagem</td>
+            </tr>
+        </table>
+    </div>
+}
+
